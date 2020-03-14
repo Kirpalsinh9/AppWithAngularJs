@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
 import { PostItemComponent } from './components/post-item/post-item.component';
+import { HeaderComponent } from './components/header/header.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     AddPostComponent,
-    PostItemComponent
+    PostItemComponent,
+    HeaderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
