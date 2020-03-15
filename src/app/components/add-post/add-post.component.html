@@ -1,1 +1,14 @@
-<p>In Add-post</p>
+<form class="main" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="Title">Title</label><br />
+        <input type="text" name="title" [(ngModel)]="title" placeholder="Enter Title">
+
+    </div>
+    <div class="form-group">
+        <label for="Body">Body</label><br />
+
+        <input type="text" name="body" [(ngModel)]="body" placeholder="Body">
+    </div><br />
+
+    <button type="submit" value="Submit">Submit</button>
+</form>

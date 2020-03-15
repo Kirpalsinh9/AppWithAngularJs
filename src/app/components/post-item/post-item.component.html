@@ -1,10 +1,14 @@
 <div>
-    <h1>
-        {{ post.title }}
-    </h1>
-    <h4>
-        {{ post.body }}
-    </h4>
 
-    <button (click)="OnDelete(post)">Delete</button>
+    <div class="main">
+        <h3>
+            {{ post.title }}
+        </h3>
+        <p>
+            {{ post.body }}
+        </p>
+
+        <button (click)="OnDelete(post)">Delete</button>
+    </div>
+    <br />
 </div>

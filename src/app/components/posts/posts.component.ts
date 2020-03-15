@@ -24,4 +24,9 @@ export class PostsComponent implements OnInit {
     //Remove from Server
     this.postService.getDelete(post).subscribe();
   }
+  addPost(post: Post) {
+    this.postService.addPost(post).subscribe(post => {
+      this.posts.push(post);
+    })
+  }
 }

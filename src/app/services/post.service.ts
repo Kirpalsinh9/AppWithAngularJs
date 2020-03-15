@@ -24,5 +24,7 @@ export class PostService {
     const Url1 = `${this.Url}/${post.id}`;
     return this.http.delete<Post>(Url1, httpOptions);
   }
-
+  addPost(post: Post): Observable<Post> {
+    return this.http.post<Post>(this.Url, post, httpOptions)
+  }
 }
